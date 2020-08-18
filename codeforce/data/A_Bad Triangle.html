@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MathJax example</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+<p>You are given an array $$a_1, a_2, \dots , a_n$$, which is       sorted in non-decreasing order ($$a_i \le a_{i + 1})$$. </p>
+<p>Find three indices $$i$$, $$j$$, $$k$$ such that $$1 \le i       < j < k \le n$$ and it is </p>
+<p> to construct a       non-degenerate triangle (a triangle with nonzero area) having       sides equal to $$a_i$$, $$a_j$$ and $$a_k$$ (for example it       is possible to construct a non-degenerate triangle with sides       $$3$$, $$4$$ and $$5$$ but impossible with sides $$3$$,       $$4$$ and $$7$$). If it is impossible to find such triple,       report it.</p>
+<p>The first line contains one integer $$t$$ ($$1 \le t \le       1000$$) — the number of test cases.</p>
+<p>The first line of each test case contains one integer $$n$$       ($$3 \le n \le 5 \cdot 10^4$$) — the length of the array $$a$$.</p>
+<p>The second line of each test case contains $$n$$ integers       $$a_1, a_2, \dots , a_n$$ ($$1 \le a_i \le 10^9$$; $$a_{i -       1} \le a_i$$) — the array $$a$$.</p>
+<p>It is guaranteed that the sum of $$n$$ over all test cases does       not exceed $$10^5$$.</p>
+<p>For each test case print the answer to it in one line.</p>
+<p>If there is a triple of indices $$i$$, $$j$$, $$k$$ ($$i       < j < k$$) such that it is </p>
+<p> to construct a       non-degenerate triangle having sides equal to $$a_i$$, $$a_j$$       and $$a_k$$, print that three indices in ascending order. If       there are multiple answers, print any of them.</p>
+<p>Otherwise, print </p>
+<p>.</p>
+<p>In the first test case it is impossible with sides $$6$$,       $$11$$ and $$18$$. Note, that this is not the only correct answer.</p>
+<p>In the second test case you always can construct a non-degenerate triangle.</p>
+<p> </p>
+</body>
+</html>
